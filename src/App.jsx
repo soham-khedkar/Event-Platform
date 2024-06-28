@@ -44,14 +44,16 @@ function App() {
 
   return (
     <>
-      <h1 className="heading">Order Food</h1>
-      <Cart cartItems={cartItems} onCheckout={onCheckout} />
+    <div className="main">
+      <h1 className="heading">Techies Event Platform</h1>
+      {/* <Cart cartItems={cartItems} onCheckout={onCheckout} /> */}
       <div className="cards__container">
         {foods.map((food) => {
           return (
             <Card food={food} key={food.id} onAdd={onAdd} onRemove={onRemove} />
           );
         })}
+      </div>
       </div>
     </>
   );
