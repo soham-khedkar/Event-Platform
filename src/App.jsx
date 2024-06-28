@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import Card from "./components/Card/Card";
+import Cart from "./components/Cart/Cart";
+import { getData } from "./db/db";
+const foods = getData();
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
-  useEffect(() => {
-    tele.ready();
-  });
+  // useEffect(() => {
+  //   tele.ready();
+  // });
 
   const onAdd = (food) => {
     const exist = cartItems.find((x) => x.id === food.id);
