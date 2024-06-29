@@ -12,10 +12,12 @@
 
 .card__title {
   color: black;
+  text-decoration: underline;
 }
 
 .card__title .card__price {
   font-weight: bold;
+  text-decoration: none;
 }
 
 .image__container {
