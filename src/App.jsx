@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
 import { getData } from "./db/db";
+import { WalletConnectButton } from "./components/wallet/connect-button";
 const foods = getData();
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
     <div className="main">
+
       <h1 className="heading">Techies Event Platform</h1>
       {/* <Cart cartItems={cartItems} onCheckout={onCheckout} /> */}
       <div className="cards__container">
@@ -54,6 +56,8 @@ function App() {
         })}
       </div>
       </div>
+    <WalletConnectButton/>
+
     </>
   );
 }
