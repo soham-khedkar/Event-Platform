@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
-import Cart from "./components/Cart/Cart";
 import { getData } from "./db/db";
 const foods = getData();
 
