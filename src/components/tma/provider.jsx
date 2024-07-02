@@ -32,7 +32,7 @@ export function TmaProvider({ children }) {
   }, []);
 
   if (isLoading) return <div>Loading...</div>; // Replace with your loading indicator
-  if (isError) return <div>Error occurred...
+  if (!isError) return <div>Error occurred...
 
     <p>
        error {err}
